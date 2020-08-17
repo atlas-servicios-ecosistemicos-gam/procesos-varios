@@ -45,6 +45,6 @@ $ ogr2ogr \
   -makevalid
 ```
 
-```
+```python
 print("Hola mundo")
 ```
