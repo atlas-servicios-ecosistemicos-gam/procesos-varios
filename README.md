@@ -1,16 +1,19 @@
 # Procesos varios del Atlas de servicios ecosistémicos de la GAM
 
 ## Creación y mantenimiento de un ambiente Conda
-**Creación**
+**Actualización de Conda**
 ```terminal
 # Actualización de Conda
 $ conda update -n base -c defaults conda
+```
 
+**Creación del ambiente**
+```terminal
 # Creación del ambiente
 $ conda create -n gam
 ```
 
-**Activación**
+**Activación del ambiente**
 ```terminal
 # Activación del ambiente
 $ conda activate gam
@@ -22,7 +25,7 @@ $ conda activate gam
 $ conda install -c conda-forge gdal
 $ conda install -c conda-forge qgis
 ```
-**Desactivación**
+**Desactivación del ambiente**
 ```terminal
 # Desactivación (para el final del proceso)
 $ conda deactivate
