@@ -35,6 +35,7 @@ $ conda deactivate
 ### Conectividad
 #### Corredores
 ```shell
+# Parches esenciales e importantes para grupo funcional de bosque
 $ ogr2ogr \
   parches_esenciales_importantes_bosque_corredores.geojson \
   PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
