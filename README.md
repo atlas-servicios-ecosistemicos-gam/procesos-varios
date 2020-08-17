@@ -34,7 +34,7 @@ $ conda deactivate
 ## Conversión de datos
 ### Conectividad
 #### Corredores
-```console
+```
 $ ogr2ogr \
   parches_esenciales_importantes_bosque_corredores.geojson \
   PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
