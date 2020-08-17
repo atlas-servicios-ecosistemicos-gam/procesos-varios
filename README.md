@@ -34,11 +34,13 @@ $ conda deactivate
 ## Conversión de datos
 ### Conectividad
 #### Corredores
-```terminal
+```bash
 $ ogr2ogr \
-  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO_CORREDORES.geojson \
-  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.shp \
+  parches_esenciales_importantes_bosque_corredores.geojson \
+  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
   -f "GeoJSON" \
+  -progress \
+  -nln parches_esenciales_importantes_bosque_corredores \
   -s_srs EPSG:5367 -t_srs EPSG:4326 \
-  -makevalid  
+  -makevalid
 ```
