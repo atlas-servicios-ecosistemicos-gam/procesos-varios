@@ -46,5 +46,5 @@ $ ogr2ogr \
 ```
 
 ```pycon
-print("Hola mundo")
+>>> print("Hola mundo")
 ```
