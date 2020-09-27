@@ -17,6 +17,7 @@ La siguiente es la lista de capas geoespaciales publicadas a la fecha:
         https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
       </td>
       <td>
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-bosque-corredores/
       </td>
       <td>
         PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_CORREDORES.SHP
@@ -27,13 +28,13 @@ La siguiente es la lista de capas geoespaciales publicadas a la fecha:
 
 El procedimiento consiste de los siguientes pasos:
 
-0. Clonación de este repositorio y activación del ambiente Conda.
+0. Activación del ambiente Conda y clonación de este repositorio.
 1. Obtención de las capas geoespaciales.
 2. Transformación de las capas.
 3. Publicación de geoservicios en ArcGIS Online.
 4. Desactivación del ambiente Conda.
 
-### 0. Clonación del repositorio y activación del ambiente Conda
+### 0. Activación del ambiente Conda y clonación de este repositorio
 ```shell
 # Activación del ambiente Conda
 $ conda activate gam
