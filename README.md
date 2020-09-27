@@ -2,7 +2,7 @@
 
 Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el Atlas de Servicios Ecosistémicos de la GAM. Estos geoservicios son utilizados para construir la interfaz de usuario del Atlas en []() y también están disponibles para acceso público en []().
 
-La siguiente es la lista de capas geoespaciales publicadas a la fecha:
+La siguiente es la lista de capas publicadas a la fecha como geoservicios:
 
 <table>
   <thead>
