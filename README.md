@@ -40,7 +40,7 @@ La siguiente es la lista de capas publicadas a la fecha como geoservicios:
   </tbody>
 </table>
 
-El procedimiento consiste de los siguientes pasos:
+El procedimiento de publicación de los geoservicios consiste de los siguientes pasos:
 
 0. Clonación de este repositorio.
 1. Obtención de las capas geoespaciales.
