@@ -11,7 +11,7 @@ La siguiente es la lista de capas publicadas a la fecha como geoservicios:
   <tbody>
     <tr>
       <td>
-        Parches esenciales e importantes para grupo funcional de bosque
+        Parches esenciales para grupo funcional de bosque en CBI María Aguilar y Río Torres
       </td>
       <td>
         https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
