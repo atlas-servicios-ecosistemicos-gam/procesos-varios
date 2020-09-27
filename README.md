@@ -17,6 +17,7 @@ La siguiente es la lista de capas geoespaciales publicadas a la fecha:
         Parches esenciales e importantes para grupo funcional de bosque
       </td>
       <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
       </td>
     </tr>
   </tbody>
