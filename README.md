@@ -6,7 +6,7 @@ La siguiente es la lista de capas geoespaciales publicadas a la fecha:
 
 <table>
   <thead>
-    <tr><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Archivo original</th></tr>
+    <tr><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Visualización</th><th>Archivo original</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -15,6 +15,8 @@ La siguiente es la lista de capas geoespaciales publicadas a la fecha:
       </td>
       <td>
         https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
+      </td>
+      <td>
       </td>
       <td>
         PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_CORREDORES.SHP
