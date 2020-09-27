@@ -1,15 +1,34 @@
 # Publicación de geoservicios del Atlas de Servicios Ecosistémicos de la GAM
 
-## Descripción general
 Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el Atlas de Servicios Ecosistémicos de la GAM. Estos geoservicios son utilizados para construir la interfaz de usuario del Atlas en []() y también están disponibles para acceso público en []().
+
+La siguiente es la lista de capas geoespaciales publicadas a la fecha:
+
+<table>
+  <thead>
+    <tr><th>Archivo</th><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 El procedimiento consiste de los siguientes pasos:
 
-0. Clonación del repositorio y activación del ambiente Conda.
+0. Clonación de este repositorio y activación del ambiente Conda.
 1. Obtención de las capas geoespaciales.
-2. 
+2. Transformación de las capas.
+3. Publicación de geoservicios en ArcGIS Online.
+4. Desactivación del ambiente Conda.
 
-### Clonación del repositorio y activación del ambiente Conda
+### 0. Clonación del repositorio y activación del ambiente Conda
 ```shell
 # Activación del ambiente Conda
 $ conda activate gam
@@ -35,7 +54,7 @@ $ unzip CONECTIVIDAD_GAM.zip
 $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ```
 
-### Transformación de datos
+### Transformación de las capas
 Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas.
 #### Conectividad
 ##### Corredores
@@ -50,6 +69,8 @@ $ ogr2ogr \
   -s_srs EPSG:5367 -t_srs EPSG:4326 \
   -makevalid
 ```
+
+### Publicación de geoservicios en ArcGIS Online
 
 ### Desactivación del ambiente Conda
 ```shell
