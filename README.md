@@ -1,4 +1,28 @@
-# Procesos varios del Atlas de servicios ecosistémicos de la GAM
+# Publicación de geoservicios del Atlas de Servicios Ecosistémicos de la GAM
+
+## Descripción general
+Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el Atlas de Servicios Ecosistémicos de la GAM. Estos geoservicios son utilizados para construir la interfaz de usuario del Atlas en []() y también están disponibles para acceso público en []().
+
+El procedimiento consiste de los siguientes pasos:
+
+1. Obtención de las capas geoespaciales.
+2. 
+
+### Obtención de las capas geoespaciales
+Las capas geoespaciales que se publican en los geoservicios fueron descargadas de un servidor FTP del Catie:
+```shell
+$ ftp 165.227.80.21
+ftp> cd PARA_ATLAS
+ftp> hash
+ftp> get CONECTIVIDAD_GAM.zip
+ftp> get INFRAESTRUCTURA_VERDE_CORREDORES.zip
+ftp> quit
+```
+
+```shell
+$ unzip CONECTIVIDAD_GAM.zip
+$ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
+```
 
 ## Creación y mantenimiento de un ambiente Conda
 **Actualización de Conda**
