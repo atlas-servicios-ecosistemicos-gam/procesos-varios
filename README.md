@@ -11,8 +11,10 @@ La siguiente es la lista de capas geoespaciales publicadas a la fecha:
   <tbody>
     <tr>
       <td>
+        PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_CORREDORES.SHP
       </td>
       <td>
+        Parches esenciales e importantes para grupo funcional de bosque
       </td>
       <td>
       </td>
