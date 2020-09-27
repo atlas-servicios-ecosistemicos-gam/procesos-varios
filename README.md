@@ -5,8 +5,19 @@ Este repositorio detalla el procedimiento para la publicación de los geoservici
 
 El procedimiento consiste de los siguientes pasos:
 
+0. Clonación del repositorio y activación del ambiente Conda.
 1. Obtención de las capas geoespaciales.
 2. 
+
+### Clonación del repositorio y activación del ambiente Conda
+```shell
+# Activación del ambiente Conda
+$ conda activate gam
+
+# Clonación del repositorio
+$ git clone https://github.com/atlas-servicios-ecosistemicos-gam/publicacion-geoservicios.git
+$ cd publicacion-geoservicios
+```
 
 ### Obtención de las capas geoespaciales
 Las capas geoespaciales que se publican en los geoservicios fueron descargadas de un servidor FTP del Catie:
@@ -22,6 +33,12 @@ ftp> quit
 ```shell
 $ unzip CONECTIVIDAD_GAM.zip
 $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
+```
+
+### Desactivación del ambiente Conda
+```shell
+# Desactivación del ambiente Conda
+$ conda deactivate
 ```
 
 ## Creación y mantenimiento de un ambiente Conda
