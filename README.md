@@ -35,6 +35,22 @@ $ unzip CONECTIVIDAD_GAM.zip
 $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ```
 
+### Transformación de datos
+Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas.
+#### Conectividad
+##### Corredores
+```shell
+# Parches esenciales e importantes para grupo funcional de bosque
+$ ogr2ogr \
+  parches_esenciales_importantes_bosque_corredores.geojson \
+  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
+  -f "GeoJSON" \
+  -progress \
+  -nln parches_esenciales_importantes_bosque_corredores \
+  -s_srs EPSG:5367 -t_srs EPSG:4326 \
+  -makevalid
+```
+
 ### Desactivación del ambiente Conda
 ```shell
 # Desactivación del ambiente Conda
@@ -70,19 +86,4 @@ $ conda install -c conda-forge qgis
 ```shell
 # Desactivación (para el final del proceso)
 $ conda deactivate
-```
-
-## Conversión de datos
-### Conectividad
-#### Corredores
-```shell
-# Parches esenciales e importantes para grupo funcional de bosque
-$ ogr2ogr \
-  parches_esenciales_importantes_bosque_corredores.geojson \
-  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
-  -f "GeoJSON" \
-  -progress \
-  -nln parches_esenciales_importantes_bosque_corredores \
-  -s_srs EPSG:5367 -t_srs EPSG:4326 \
-  -makevalid
 ```
