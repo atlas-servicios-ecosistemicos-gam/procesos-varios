@@ -70,8 +70,11 @@ $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ### 2. Transformación de las capas
 Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca GDAL, instalada en un ambiente Conda:
 ```shell
+# Activación del ambiente Conda
+$ conda activate geo-cosecha-agua-exportacion-datos-siscan
 ```
 
+Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles:
 #### Conectividad
 ##### Corredores
 ```shell
@@ -86,13 +89,14 @@ $ ogr2ogr \
   -makevalid
 ```
 
-### Publicación de geoservicios en ArcGIS Online
-
-### Desactivación del ambiente Conda
+Una vez finalizadas las transformaciones, el ambiente Conda debe desactivarse:
 ```shell
 # Desactivación del ambiente Conda
 $ conda deactivate
 ```
+
+### Publicación de geoservicios en ArcGIS Online
+Cada archivo GeoJSON debe cargarse en ...
 
 ## Creación y mantenimiento de un ambiente Conda
 **Actualización de Conda**
