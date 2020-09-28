@@ -225,7 +225,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>    
     <tr>
       <td>
-        3
+        4
       </td>      
       <td>
         Parches importantes para grupo funcional de bosque y bosque ribereño en CBI María Aguilar y Río Torres
