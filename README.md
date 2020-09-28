@@ -4,8 +4,19 @@ Este repositorio detalla el procedimiento para la publicación de los geoservici
 
 La siguiente es la lista de capas publicadas a la fecha como geoservicios:
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
 
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
 <table>
   <thead>
     <tr><th>Id</th><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Visualización</th><th>Archivo original</th></tr>
