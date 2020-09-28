@@ -6,10 +6,13 @@ La siguiente es la lista de capas publicadas a la fecha como geoservicios:
 
 <table>
   <thead>
-    <tr><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Visualización</th><th>Archivo original</th></tr>
+    <tr><th>Id</th><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Visualización</th><th>Archivo original</th></tr>
   </thead>
   <tbody>
     <tr>
+      <td>
+        1
+      </td>
       <td>
         Parches esenciales para grupo funcional de bosque en CBI María Aguilar y Río Torres
       </td>
@@ -24,6 +27,9 @@ La siguiente es la lista de capas publicadas a la fecha como geoservicios:
       </td>      
     </tr>
     <tr>
+      <td>
+        2
+      </td>      
       <td>
         Parches importantes para grupo funcional de bosque en CBI María Aguilar y Río Torres
       </td>
