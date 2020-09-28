@@ -23,19 +23,21 @@ El procedimiento de publicación de los geoservicios consiste de los siguientes 
 ```shell
 # Clonación de este repositorio Git
 $ git clone https://github.com/atlas-servicios-ecosistemicos-gam/publicacion-geoservicios.git
+
 $ cd publicacion-geoservicios
 ```
 
 ### 1.1. Obtención de las capas geoespaciales
 Las capas geoespaciales que se publican en los geoservicios se descargan, en formato ZIP, de un servidor FTP del Catie:
 ```shell
-# Descarga del servidor FTP
+# Descarga de los archivos
 $ ftp 165.227.80.21
 ftp> cd PARA_ATLAS
 ftp> hash
 ftp> get CONECTIVIDAD_GAM.zip
 ftp> get INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ftp> quit
+
 # Descompresión
 $ unzip CONECTIVIDAD_GAM.zip
 $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
