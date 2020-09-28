@@ -101,6 +101,7 @@ $ ogr2ogr \
 Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
 ```shell
 # Actualización del repositorio
+$ git status
 $ git add .
 $ git commit -m "Transformar datos"
 $ git push
