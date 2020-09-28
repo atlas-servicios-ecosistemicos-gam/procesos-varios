@@ -85,7 +85,15 @@ $ conda activate geo-cosecha-agua-exportacion-datos-siscan
 
 Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles, los cuales están ubicados en diferentes subdirectorios:
 #### Conectividad
+```shell
+$ cd CONECTIVIDAD_GAM
+```
 ##### Corredores
+```shell
+$ cd CORREDORES
+```
+
+Parches esenciales e importantes en CBI María Aguilar y Río Torres
 ```shell
 # Parches esenciales e importantes para grupo funcional de bosque
 $ ogr2ogr \
