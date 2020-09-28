@@ -67,50 +67,50 @@ Parches esenciales e importantes en CBI María Aguilar y Río Torres
 $ ogr2ogr \
     -f "GeoJSON" \
     -progress \
-    -nln parches_esenciales_importantes_bosque_corredores \
+    -nln gam_parches_esenciales_importantes_bosque_corredores \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
-    parches_esenciales_importantes_bosque_corredores.geojson \
+    gam_parches_esenciales_importantes_bosque_corredores.geojson \
     PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp
     
 # Parches esenciales e importantes para grupo funcional de bosque y bosque ribereño
 $ ogr2ogr \
     -f "GeoJSON" \
     -progress \
-    -nln parches_esenciales_importantes_bosque_bripario_corredores \
+    -nln gam_parches_esenciales_importantes_bosque_bripario_corredores \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
-    parches_esenciales_importantes_bosque_bripario_corredores.geojson \
+    gam_parches_esenciales_importantes_bosque_bripario_corredores.geojson \
     PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.shp
     
 # Parches esenciales e importantes para grupo funcional bosque ribereño
 $ ogr2ogr \
     -f "GeoJSON" \
     -progress \
-    -nln parches_esenciales_importantes_bripario_corredores \
+    -nln gam_parches_esenciales_importantes_bripario_corredores \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
-    parches_esenciales_importantes_bripario_corredores.geojson \
+    gam_parches_esenciales_importantes_bripario_corredores.geojson \
     PARCHES_ESENCIALES_IMPORTANTES_BRIPARIO.shp
     
 # Parches esenciales e importantes para grupo funcional migratorias
 $ ogr2ogr \
     -f "GeoJSON" \
     -progress \
-    -nln parches_esenciales_importantes_migratorias_corredores \
+    -nln gam_parches_esenciales_importantes_migratorias_corredores \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
-    parches_esenciales_importantes_migratorias_corredores.geojson \
+    gam_parches_esenciales_importantes_migratorias_corredores.geojson \
     PARCHES_ESENCIALES_IMPORTANTES_MIGRATORIAS.shp
     
 # Parches esenciales e importantes para grupo funcional otras
 $ ogr2ogr \
     -f "GeoJSON" \
     -progress \
-    -nln parches_esenciales_importantes_otras_corredores \
+    -nln gam_parches_esenciales_importantes_otras_corredores \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
-    parches_esenciales_importantes_otras_corredores.geojson \
+    gam_parches_esenciales_importantes_otras_corredores.geojson \
     PARCHES_ESENCIALES_IMPORTANTES_OTRAS.shp
 ```
 
