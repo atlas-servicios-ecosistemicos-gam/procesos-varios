@@ -71,7 +71,47 @@ $ ogr2ogr \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
     parches_esenciales_importantes_bosque_corredores.geojson \
-    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp    
+    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp
+    
+# Parches esenciales e importantes para grupo funcional de bosque y bosque ribereño
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln parches_esenciales_importantes_bosque_bripario_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    parches_esenciales_importantes_bosque_bripario_corredores.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO_CORREDORES.SHP
+    
+# Parches esenciales e importantes para grupo funcional bosque ribereño
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln parches_esenciales_importantes_bripario_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    parches_esenciales_importantes_bripario_corredores.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_BRIPARIO_CORREDORES.SHP
+    
+# Parches esenciales e importantes para grupo funcional migratorias
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln parches_esenciales_importantes_migratorias_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    parches_esenciales_importantes_migratorias_corredores.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_MIGRATORIAS_CORREDORES.SHP
+    
+# Parches esenciales e importantes para grupo funcional otras
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln parches_esenciales_importantes_otras_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    parches_esenciales_importantes_otras_corredores.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_OTRAS_CORREDORES.SHP    
 ```
 
 Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
@@ -87,7 +127,7 @@ $ conda deactivate
 ```
 
 ### 1.3. Publicación de geoservicios en ArcGIS Online
-Cada archivo GeoJSON debe cargarse en ...
+Los geoservicios se alojan en [GeoCatie](https://geocatie.maps.arcgis.com/) (plataforma ArcGIS Online de Catie), en la carpeta ```Atlas de servicios ecosistémicos de la GAM```. Con la opción *Agregar elemento*, debe cargarse cada uno de los archivos GeoJSON y marcarse la casilla *Publicar este archivo como una capa alojada*.
 
 ## ANEXO 1. Procedimiento para la creación y mantenimiento de un ambiente Conda
 **Actualización de Conda**
