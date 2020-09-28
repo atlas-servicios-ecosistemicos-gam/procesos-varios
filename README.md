@@ -9,7 +9,7 @@ Este repositorio detalla el procedimiento para la publicación de los geoservici
     - [1.2. Transformación de las capas geoespaciales]()
     - [1.3. Publicación de geoservicios en ArcGIS Online]()
 - [ANEXO 1. Creación y mantenimiento de un ambiente Conda]()
-- [ANEXO 2. Lista de geoservicios publicados](##ANEXO 2. Lista de geoservicios publicados)
+- [ANEXO 2. Lista de geoservicios publicados](#anexo-2-lista-de-geoservicios-publicados)
 
 ## 1. Procedimiento para la publicación de geoservicios
 El procedimiento de publicación de los geoservicios consiste de los siguientes pasos:
