@@ -4,7 +4,7 @@ Este repositorio detalla el procedimiento para la publicación de los geoservici
 
 ## Contenidos
 - [1. Lista de geoservicios publicados]()
-- [2. Procedimiento para la publicación de geoservicios]
+- [2. Procedimiento para la publicación de geoservicios]()
     - [0. Clonación de este repositorio Git]()
     - [1. Obtención de las capas geoespaciales]()
 
