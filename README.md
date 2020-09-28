@@ -3,12 +3,123 @@
 Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el Atlas de Servicios Ecosistémicos de la GAM. Estos geoservicios son utilizados para construir la interfaz de usuario del Atlas en y también están disponibles para acceso público.
 
 ## Contenidos
-- [1. Lista de geoservicios publicados]()
-- [2. Procedimiento para la publicación de geoservicios]()
-    - [0. Clonación de este repositorio Git]()
-    - [1. Obtención de las capas geoespaciales]()
+- [1. Procedimiento para la publicación de geoservicios]()
+    - [1.0. Clonación de este repositorio Git]()
+    - [1.1. Obtención de las capas geoespaciales]()
+    - [1.2. Transformación de las capas geoespaciales]()
+    - [1.3. Publicación de geoservicios en ArcGIS Online]()
+- [ANEXO 1. Creación y mantenimiento de un ambiente Conda]()
+- [ANEXO 2. Lista de geoservicios publicados]()
 
-## 1. Lista de geoservicios publicados
+## 1. Procedimiento para la publicación de geoservicios
+El procedimiento de publicación de los geoservicios consiste de los siguientes pasos:
+
+0. Clonación de este repositorio Git.
+1. Obtención de las capas geoespaciales.
+2. Transformación de las capas.
+3. Publicación de geoservicios en ArcGIS Online.
+
+### 1.0. Clonación de este repositorio Git
+```shell
+# Clonación de este repositorio Git
+$ git clone https://github.com/atlas-servicios-ecosistemicos-gam/publicacion-geoservicios.git
+$ cd publicacion-geoservicios
+```
+
+### 1.1. Obtención de las capas geoespaciales
+Las capas geoespaciales que se publican en los geoservicios se descargan, en formato ZIP, de un servidor FTP del Catie:
+```shell
+# Descarga del servidor FTP
+$ ftp 165.227.80.21
+ftp> cd PARA_ATLAS
+ftp> hash
+ftp> get CONECTIVIDAD_GAM.zip
+ftp> get INFRAESTRUCTURA_VERDE_CORREDORES.zip
+ftp> quit
+# Descompresión
+$ unzip CONECTIVIDAD_GAM.zip
+$ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
+```
+Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del repositorio, ya que son demasiado grandes para ser aceptados por GitHub.
+
+### 1.2. Transformación de las capas
+Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca [GDAL](https://gdal.org/), instalada en un ambiente [Conda](https://docs.conda.io/):
+```shell
+# Activación del ambiente Conda
+$ conda activate geo-cosecha-agua-exportacion-datos-siscan
+```
+
+Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles, los cuales están ubicados en diferentes subdirectorios:
+#### Conectividad
+```shell
+$ cd CONECTIVIDAD_GAM
+```
+##### Corredores
+```shell
+$ cd CORREDORES
+```
+
+Parches esenciales e importantes en CBI María Aguilar y Río Torres
+```shell
+# Parches esenciales e importantes para grupo funcional de bosque
+$ ogr2ogr \
+  parches_esenciales_importantes_bosque_corredores.geojson \
+  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
+  -f "GeoJSON" \
+  -progress \
+  -nln parches_esenciales_importantes_bosque_corredores \
+  -s_srs EPSG:5367 -t_srs EPSG:4326 \
+  -makevalid
+```
+
+Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
+```shell
+# Actualización del repositorio
+$ git status
+$ git add .
+$ git commit -m "Transformar datos"
+$ git push
+
+# Desactivación del ambiente Conda
+$ conda deactivate
+```
+
+### 1.3. Publicación de geoservicios en ArcGIS Online
+Cada archivo GeoJSON debe cargarse en ...
+
+## ANEXO 1. Creación y mantenimiento de un ambiente Conda
+**Actualización de Conda**
+```shell
+# Actualización de Conda
+$ conda update -n base -c defaults conda
+```
+
+**Creación del ambiente**
+```shell
+# Creación del ambiente
+$ conda create -n gam
+```
+
+**Activación del ambiente**
+```shell
+# Activación del ambiente
+$ conda activate gam
+```
+
+**Instalación de paquetes**
+```shell
+# Instalación de paquetes
+$ conda install -c conda-forge gdal
+$ conda install -c conda-forge qgis
+```
+
+**Desactivación del ambiente**
+```shell
+# Desactivación (para el final del proceso)
+$ conda deactivate
+```
+
+## ANEXO 2. Lista de geoservicios publicados
 La siguiente es la lista de geoservicios publicados a la fecha:
 
 <table>
@@ -52,111 +163,3 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>    
   </tbody>
 </table>
-
-## 2. Procedimiento para la publicación de geoservicios
-El procedimiento de publicación de los geoservicios consiste de los siguientes pasos:
-
-0. Clonación de este repositorio Git.
-1. Obtención de las capas geoespaciales.
-2. Transformación de las capas.
-3. Publicación de geoservicios en ArcGIS Online.
-
-### 2.0. Clonación de este repositorio Git
-```shell
-# Clonación de este repositorio Git
-$ git clone https://github.com/atlas-servicios-ecosistemicos-gam/publicacion-geoservicios.git
-$ cd publicacion-geoservicios
-```
-
-### 2.1. Obtención de las capas geoespaciales
-Las capas geoespaciales que se publican en los geoservicios se descargan, en formato ZIP, de un servidor FTP del Catie:
-```shell
-# Descarga del servidor FTP
-$ ftp 165.227.80.21
-ftp> cd PARA_ATLAS
-ftp> hash
-ftp> get CONECTIVIDAD_GAM.zip
-ftp> get INFRAESTRUCTURA_VERDE_CORREDORES.zip
-ftp> quit
-# Descompresión
-$ unzip CONECTIVIDAD_GAM.zip
-$ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
-```
-Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del repositorio, ya que son demasiado grandes para ser aceptados por GitHub.
-
-### 2.2. Transformación de las capas
-Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca [GDAL](https://gdal.org/), instalada en un ambiente [Conda](https://docs.conda.io/):
-```shell
-# Activación del ambiente Conda
-$ conda activate geo-cosecha-agua-exportacion-datos-siscan
-```
-
-Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles, los cuales están ubicados en diferentes subdirectorios:
-#### Conectividad
-```shell
-$ cd CONECTIVIDAD_GAM
-```
-##### Corredores
-```shell
-$ cd CORREDORES
-```
-
-Parches esenciales e importantes en CBI María Aguilar y Río Torres
-```shell
-# Parches esenciales e importantes para grupo funcional de bosque
-$ ogr2ogr \
-  parches_esenciales_importantes_bosque_corredores.geojson \
-  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
-  -f "GeoJSON" \
-  -progress \
-  -nln parches_esenciales_importantes_bosque_corredores \
-  -s_srs EPSG:5367 -t_srs EPSG:4326 \
-  -makevalid
-```
-
-Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
-```shell
-# Actualización del repositorio
-$ git status
-$ git add .
-$ git commit -m "Transformar datos"
-$ git push
-
-# Desactivación del ambiente Conda
-$ conda deactivate
-```
-
-### 2.3. Publicación de geoservicios en ArcGIS Online
-Cada archivo GeoJSON debe cargarse en ...
-
-## ANEXO 1. Creación y mantenimiento de un ambiente Conda
-**Actualización de Conda**
-```shell
-# Actualización de Conda
-$ conda update -n base -c defaults conda
-```
-
-**Creación del ambiente**
-```shell
-# Creación del ambiente
-$ conda create -n gam
-```
-
-**Activación del ambiente**
-```shell
-# Activación del ambiente
-$ conda activate gam
-```
-
-**Instalación de paquetes**
-```shell
-# Instalación de paquetes
-$ conda install -c conda-forge gdal
-$ conda install -c conda-forge qgis
-```
-
-**Desactivación del ambiente**
-```shell
-# Desactivación (para el final del proceso)
-$ conda deactivate
-```
