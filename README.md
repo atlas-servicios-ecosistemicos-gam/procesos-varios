@@ -183,7 +183,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
       </td>
       <td>
-        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-bosque-corredores/
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
       </td>
       <td>
         PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_CORREDORES.SHP
@@ -200,7 +200,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
       </td>
       <td>
-        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-bosque-corredores/
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
       </td>
       <td>
         PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp
@@ -217,7 +217,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_bripario_corredores/FeatureServer/0
       </td>
       <td>
-        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-bosque-corredores/
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
       </td>
       <td>
         PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.shp
@@ -234,7 +234,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_bripario_corredores/FeatureServer/0
       </td>
       <td>
-        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-bosque-corredores/
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
       </td>
       <td>
         PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.shp
