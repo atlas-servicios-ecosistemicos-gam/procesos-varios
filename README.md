@@ -180,7 +180,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         Parches esenciales para grupo funcional de bosque en CBI María Aguilar y Río Torres
       </td>
       <td>
-        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bosque_corredores/FeatureServer/0
       </td>
       <td>
         https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
@@ -197,7 +197,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         Parches importantes para grupo funcional de bosque en CBI María Aguilar y Río Torres
       </td>
       <td>
-        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer/0
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bosque_corredores/FeatureServer/0
       </td>
       <td>
         https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
@@ -214,7 +214,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         Parches esenciales para grupo funcional de bosque y bosque ribereño en CBI María Aguilar y Río Torres
       </td>
       <td>
-        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_bripario_corredores/FeatureServer/0
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bosque_bripario_corredores/FeatureServer/0
       </td>
       <td>
         https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
@@ -231,7 +231,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         Parches importantes para grupo funcional de bosque y bosque ribereño en CBI María Aguilar y Río Torres
       </td>
       <td>
-        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_bripario_corredores/FeatureServer/0
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bosque_bripario_corredores/FeatureServer/0
       </td>
       <td>
         https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
