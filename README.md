@@ -42,7 +42,7 @@ ftp> quit
 $ unzip CONECTIVIDAD_GAM.zip
 $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ```
-Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del repositorio, ya que son demasiado grandes para ser aceptados por GitHub.
+Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del repositorio o no incluirlos en la operación ```git add```, ya que son demasiado grandes para ser aceptados por GitHub.
 
 ### 1.2. Transformación de las capas geoespaciales
 Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca [GDAL](https://gdal.org/), instalada en un ambiente [Conda](https://docs.conda.io/):
