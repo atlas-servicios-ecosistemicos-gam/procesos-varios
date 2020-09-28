@@ -63,24 +63,27 @@ $ cd publicacion-geoservicios
 ### 1. Obtención de las capas geoespaciales
 Las capas geoespaciales que se publican en los geoservicios se descargan, en formato ZIP, de un servidor FTP del Catie:
 ```shell
+# Descarga del servidor FTP
 $ ftp 165.227.80.21
 ftp> cd PARA_ATLAS
 ftp> hash
 ftp> get CONECTIVIDAD_GAM.zip
 ftp> get INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ftp> quit
+# Descompresión
 $ unzip CONECTIVIDAD_GAM.zip
 $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ```
+Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del repositorio, ya que son demasiado grandes para ser aceptados por GitHub.
 
 ### 2. Transformación de las capas
-Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca GDAL, instalada en un ambiente Conda:
+Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca [GDAL](https://gdal.org/), instalada en un ambiente [Conda](https://docs.conda.io/):
 ```shell
 # Activación del ambiente Conda
 $ conda activate geo-cosecha-agua-exportacion-datos-siscan
 ```
 
-Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles:
+Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles, los cuales están ubicados en diferentes subdirectorios:
 #### Conectividad
 ##### Corredores
 ```shell
