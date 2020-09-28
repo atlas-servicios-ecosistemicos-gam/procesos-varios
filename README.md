@@ -87,7 +87,7 @@ $ conda deactivate
 ### 1.3. Publicación de geoservicios en ArcGIS Online
 Cada archivo GeoJSON debe cargarse en ...
 
-## ANEXO 1. Creación y mantenimiento de un ambiente Conda
+## ANEXO 1. Procedimiento para la creación y mantenimiento de un ambiente Conda
 **Actualización de Conda**
 ```shell
 # Actualización de Conda
