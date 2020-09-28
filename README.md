@@ -31,7 +31,7 @@ $ cd publicacion-geoservicios
 Las capas geoespaciales que se publican en los geoservicios se descargan, en formato ZIP, de un servidor FTP del Catie:
 ```shell
 # Descarga de los archivos
-$ ftp 165.227.80.21
+$ ftp 165.227.80.21 # deben ingresarse el usuario y la clave
 ftp> cd PARA_ATLAS
 ftp> hash
 ftp> get CONECTIVIDAD_GAM.zip
@@ -48,7 +48,7 @@ Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del reposit
 Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca [GDAL](https://gdal.org/), instalada en un ambiente [Conda](https://docs.conda.io/):
 ```shell
 # Activación del ambiente Conda
-$ conda activate geo-cosecha-agua-exportacion-datos-siscan
+$ conda activate gam
 ```
 
 Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles, los cuales están ubicados en diferentes subdirectorios:
@@ -65,13 +65,13 @@ Parches esenciales e importantes en CBI María Aguilar y Río Torres
 ```shell
 # Parches esenciales e importantes para grupo funcional de bosque
 $ ogr2ogr \
-  parches_esenciales_importantes_bosque_corredores.geojson \
-  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
-  -f "GeoJSON" \
-  -progress \
-  -nln parches_esenciales_importantes_bosque_corredores \
-  -s_srs EPSG:5367 -t_srs EPSG:4326 \
-  -makevalid
+    -f "GeoJSON" \
+    -progress \
+    -nln parches_esenciales_importantes_bosque_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    parches_esenciales_importantes_bosque_corredores.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp    
 ```
 
 Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
