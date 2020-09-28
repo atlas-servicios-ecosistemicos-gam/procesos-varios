@@ -2,7 +2,14 @@
 
 Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el Atlas de Servicios Ecosistémicos de la GAM. Estos geoservicios son utilizados para construir la interfaz de usuario del Atlas en y también están disponibles para acceso público.
 
-La siguiente es la lista de capas publicadas a la fecha como geoservicios:
+## Contenidos
+- [1. Lista de geoservicios publicados]()
+- [2. Procedimiento para la publicación de geoservicios]
+    - [0. Clonación de este repositorio Git]()
+    - [1. Obtención de las capas geoespaciales]()
+
+## 1. Lista de geoservicios publicados
+La siguiente es la lista de geoservicios publicados a la fecha:
 
 <table>
   <thead>
@@ -46,6 +53,7 @@ La siguiente es la lista de capas publicadas a la fecha como geoservicios:
   </tbody>
 </table>
 
+## 2. Procedimiento para la publicación de geoservicios
 El procedimiento de publicación de los geoservicios consiste de los siguientes pasos:
 
 0. Clonación de este repositorio Git.
@@ -53,14 +61,14 @@ El procedimiento de publicación de los geoservicios consiste de los siguientes 
 2. Transformación de las capas.
 3. Publicación de geoservicios en ArcGIS Online.
 
-### 0. Clonación de este repositorio Git
+### 2.0. Clonación de este repositorio Git
 ```shell
 # Clonación de este repositorio Git
 $ git clone https://github.com/atlas-servicios-ecosistemicos-gam/publicacion-geoservicios.git
 $ cd publicacion-geoservicios
 ```
 
-### 1. Obtención de las capas geoespaciales
+### 2.1. Obtención de las capas geoespaciales
 Las capas geoespaciales que se publican en los geoservicios se descargan, en formato ZIP, de un servidor FTP del Catie:
 ```shell
 # Descarga del servidor FTP
@@ -76,7 +84,7 @@ $ unzip INFRAESTRUCTURA_VERDE_CORREDORES.zip
 ```
 Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del repositorio, ya que son demasiado grandes para ser aceptados por GitHub.
 
-### 2. Transformación de las capas
+### 2.2. Transformación de las capas
 Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca [GDAL](https://gdal.org/), instalada en un ambiente [Conda](https://docs.conda.io/):
 ```shell
 # Activación del ambiente Conda
@@ -118,7 +126,7 @@ $ git push
 $ conda deactivate
 ```
 
-### Publicación de geoservicios en ArcGIS Online
+### 2.3. Publicación de geoservicios en ArcGIS Online
 Cada archivo GeoJSON debe cargarse en ...
 
 ## ANEXO 1. Creación y mantenimiento de un ambiente Conda
