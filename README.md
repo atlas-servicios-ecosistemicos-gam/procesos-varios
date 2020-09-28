@@ -1,6 +1,6 @@
 # Publicación de geoservicios del Atlas de Servicios Ecosistémicos de la GAM
 
-Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el [Atlas de Servicios Ecosistémicos de la Gran Área Metropolitana](). Estos geoservicios son utilizados en la interfaz de usuario del Atlas en y también están disponibles para ser consumidos en herramientas como sistemas de información geográfica, como [ESRI ArcGIS](https://www.arcgis.com/) y [QGIS](https://qgis.org/).
+Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el [Atlas de Servicios Ecosistémicos de la Gran Área Metropolitana](). Estos geoservicios son utilizados en la interfaz de usuario del Atlas en y también están disponibles para ser consumidos en herramientas como sistemas de información geográfica, como [ESRI ArcGIS](https://www.arcgis.com/) y [QGIS](https://qgis.org/), entre otras.
 
 Este documento describe el procedimiento a seguir para la creación de los servicios e incluye también, en el Anexo 2, una lista de los geoservicios publicados.
 
