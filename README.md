@@ -81,7 +81,7 @@ $ ogr2ogr \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
     parches_esenciales_importantes_bosque_bripario_corredores.geojson \
-    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.SHP
+    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.shp
     
 # Parches esenciales e importantes para grupo funcional bosque ribereño
 $ ogr2ogr \
@@ -91,7 +91,7 @@ $ ogr2ogr \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
     parches_esenciales_importantes_bripario_corredores.geojson \
-    PARCHES_ESENCIALES_IMPORTANTES_BRIPARIO.SHP
+    PARCHES_ESENCIALES_IMPORTANTES_BRIPARIO.shp
     
 # Parches esenciales e importantes para grupo funcional migratorias
 $ ogr2ogr \
@@ -101,7 +101,7 @@ $ ogr2ogr \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
     parches_esenciales_importantes_migratorias_corredores.geojson \
-    PARCHES_ESENCIALES_IMPORTANTES_MIGRATORIAS.SHP
+    PARCHES_ESENCIALES_IMPORTANTES_MIGRATORIAS.shp
     
 # Parches esenciales e importantes para grupo funcional otras
 $ ogr2ogr \
@@ -111,7 +111,7 @@ $ ogr2ogr \
     -s_srs EPSG:5367 -t_srs EPSG:4326 \
     -makevalid \
     parches_esenciales_importantes_otras_corredores.geojson \
-    PARCHES_ESENCIALES_IMPORTANTES_OTRAS.SHP    
+    PARCHES_ESENCIALES_IMPORTANTES_OTRAS.shp
 ```
 
 Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
