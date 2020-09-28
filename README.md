@@ -48,14 +48,14 @@ La siguiente es la lista de capas publicadas a la fecha como geoservicios:
 
 El procedimiento de publicación de los geoservicios consiste de los siguientes pasos:
 
-0. Clonación de este repositorio.
+0. Clonación de este repositorio Git.
 1. Obtención de las capas geoespaciales.
 2. Transformación de las capas.
 3. Publicación de geoservicios en ArcGIS Online.
 
-### 0. Clonación de este repositorio
+### 0. Clonación de este repositorio Git
 ```shell
-# Clonación de este repositorio
+# Clonación de este repositorio Git
 $ git clone https://github.com/atlas-servicios-ecosistemicos-gam/publicacion-geoservicios.git
 $ cd publicacion-geoservicios
 ```
@@ -98,8 +98,13 @@ $ ogr2ogr \
   -makevalid
 ```
 
-Una vez finalizadas las transformaciones, el ambiente Conda debe desactivarse:
+Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
 ```shell
+# Actualización del repositorio
+$ git add .
+$ git commit -m "Transformar datos"
+$ git push
+
 # Desactivación del ambiente Conda
 $ conda deactivate
 ```
@@ -107,7 +112,7 @@ $ conda deactivate
 ### Publicación de geoservicios en ArcGIS Online
 Cada archivo GeoJSON debe cargarse en ...
 
-## Creación y mantenimiento de un ambiente Conda
+## ANEXO 1. Creación y mantenimiento de un ambiente Conda
 **Actualización de Conda**
 ```shell
 # Actualización de Conda
@@ -132,6 +137,7 @@ $ conda activate gam
 $ conda install -c conda-forge gdal
 $ conda install -c conda-forge qgis
 ```
+
 **Desactivación del ambiente**
 ```shell
 # Desactivación (para el final del proceso)
