@@ -48,7 +48,7 @@ Una vez descomprimidos, se recomienda guardar los archivos ZIP fuera del reposit
 Los capas originales, en formato ESRI Shapefile, se transforman a formato GeoJSON, SRS WGS84 y con geometrías validadas. Estas transformaciones se realizan con la biblioteca [GDAL](https://gdal.org/), instalada en un ambiente [Conda](https://docs.conda.io/):
 ```shell
 # Activación del ambiente Conda
-$ conda activate geo-cosecha-agua-exportacion-datos-siscan
+$ conda activate gam
 ```
 
 Posteriormente, se procede a generar los archivos GeoJSON correspondientes a los shapefiles, los cuales están ubicados en diferentes subdirectorios:
