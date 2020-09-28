@@ -31,7 +31,7 @@ $ cd publicacion-geoservicios
 Las capas geoespaciales que se publican en los geoservicios se descargan, en formato ZIP, de un servidor FTP del Catie:
 ```shell
 # Descarga de los archivos
-$ ftp 165.227.80.21
+$ ftp 165.227.80.21 # deben ingresarse el usuario y la clave
 ftp> cd PARA_ATLAS
 ftp> hash
 ftp> get CONECTIVIDAD_GAM.zip
