@@ -127,7 +127,7 @@ $ conda deactivate
 ```
 
 ### 1.3. Publicación de geoservicios en ArcGIS Online
-Los geoservicios se alojan en [GeoCatie](https://geocatie.maps.arcgis.com/) (plataforma ArcGIS Online de Catie), en la carpeta ```Atlas de servicios ecosistémicos de la GAM```. Con la opción *Agregar elemento*, debe cargarse cada uno de los archivos GeoJSON y marcarse la casilla *Publicar este archivo como una capa alojada*.
+Los geoservicios se alojan en [GeoCatie](https://geocatie.maps.arcgis.com/) (plataforma ArcGIS Online de Catie), en la carpeta ```Atlas de servicios ecosistémicos de la GAM```. Con la opción *Agregar elemento*, debe cargarse cada uno de los archivos GeoJSON y marcarse la casilla *Publicar este archivo como una capa alojada*. La dirección del geoservicio correspondiente a la capa puede verse en el campo URL, en la pestaña "Información general" (ej. https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/parches_esenciales_importantes_bosque_corredores/FeatureServer).
 
 ## Anexo 1. Procedimiento para la creación y mantenimiento de un ambiente Conda
 **Actualización de Conda**
