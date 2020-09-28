@@ -239,6 +239,40 @@ La siguiente es la lista de geoservicios publicados a la fecha:
       <td>
         PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.shp
       </td>          
-    </tr>          
+    </tr>
+    <tr>
+      <td>
+        5
+      </td>      
+      <td>
+        Parches esenciales para grupo funcional de bosque ribereño en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bripario_corredores/FeatureServer/0
+      </td>
+      <td>
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
+      </td>
+      <td>
+        PARCHES_ESENCIALES_IMPORTANTES_BRIPARIO.shp
+      </td>          
+    </tr>    
+    <tr>
+      <td>
+        6
+      </td>      
+      <td>
+        Parches importantes para grupo funcional de bosque ribereño en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bripario_corredores/FeatureServer/0
+      </td>
+      <td>
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
+      </td>
+      <td>
+        PARCHES_ESENCIALES_IMPORTANTES_BRIPARIO.shp
+      </td>          
+    </tr>         
   </tbody>
 </table>
