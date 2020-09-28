@@ -65,13 +65,13 @@ Parches esenciales e importantes en CBI María Aguilar y Río Torres
 ```shell
 # Parches esenciales e importantes para grupo funcional de bosque
 $ ogr2ogr \
-  parches_esenciales_importantes_bosque_corredores.geojson \
-  PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp \
-  -f "GeoJSON" \
-  -progress \
-  -nln parches_esenciales_importantes_bosque_corredores \
-  -s_srs EPSG:5367 -t_srs EPSG:4326 \
-  -makevalid
+    -f "GeoJSON" \
+    -progress \
+    -nln parches_esenciales_importantes_bosque_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    parches_esenciales_importantes_bosque_corredores.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp    
 ```
 
 Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
