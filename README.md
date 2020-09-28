@@ -1,6 +1,8 @@
 # Publicación de geoservicios del Atlas de Servicios Ecosistémicos de la GAM
 
-Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el Atlas de Servicios Ecosistémicos de la GAM. Estos geoservicios son utilizados para construir la interfaz de usuario del Atlas en y también están disponibles para acceso público.
+Este repositorio detalla el procedimiento para la publicación de los geoservicios (i.e. servicios web geoespaciales) utilizados en el [Atlas de Servicios Ecosistémicos de la Gran Área Metropolitana](). Estos geoservicios son utilizados en la interfaz de usuario del Atlas en y también están disponibles para ser consumidos en herramientas como sistemas de información geográfica, como [ESRI ArcGIS](https://www.arcgis.com/) y [QGIS](https://qgis.org/).
+
+Este documento describe el procedimiento a seguir para la creación de los servicios e incluye también, en el Anexo 2, una lista de los geoservicios publicados.
 
 ## Contenido
 - [1. Procedimiento para la publicación de geoservicios](#1-procedimiento-para-la-publicaci%C3%B3n-de-geoservicios)
@@ -8,8 +10,8 @@ Este repositorio detalla el procedimiento para la publicación de los geoservici
     - [1.1. Obtención de las capas geoespaciales](#11-obtenci%C3%B3n-de-las-capas-geoespaciales)
     - [1.2. Transformación de las capas geoespaciales](#12-transformaci%C3%B3n-de-las-capas-geoespaciales)
     - [1.3. Publicación de geoservicios en ArcGIS Online](#13-publicaci%C3%B3n-de-geoservicios-en-arcgis-online)
-- [ANEXO 1. Procedimiento para la creación y mantenimiento de un ambiente Conda](#anexo-1-procedimiento-para-la-creaci%C3%B3n-y-mantenimiento-de-un-ambiente-conda)
-- [ANEXO 2. Lista de geoservicios publicados](#anexo-2-lista-de-geoservicios-publicados)
+- [Anexo 1. Procedimiento para la creación y mantenimiento de un ambiente Conda](#anexo-1-procedimiento-para-la-creaci%C3%B3n-y-mantenimiento-de-un-ambiente-conda)
+- [Anexo 2. Lista de geoservicios publicados](#anexo-2-lista-de-geoservicios-publicados)
 
 ## 1. Procedimiento para la publicación de geoservicios
 El procedimiento de publicación de los geoservicios consiste de los siguientes pasos:
@@ -129,7 +131,7 @@ $ conda deactivate
 ### 1.3. Publicación de geoservicios en ArcGIS Online
 Los geoservicios se alojan en [GeoCatie](https://geocatie.maps.arcgis.com/) (plataforma ArcGIS Online de Catie), en la carpeta ```Atlas de servicios ecosistémicos de la GAM```. Con la opción *Agregar elemento*, debe cargarse cada uno de los archivos GeoJSON y marcarse la casilla *Publicar este archivo como una capa alojada*.
 
-## ANEXO 1. Procedimiento para la creación y mantenimiento de un ambiente Conda
+## Anexo 1. Procedimiento para la creación y mantenimiento de un ambiente Conda
 **Actualización de Conda**
 ```shell
 # Actualización de Conda
@@ -161,7 +163,7 @@ $ conda install -c conda-forge qgis
 $ conda deactivate
 ```
 
-## ANEXO 2. Lista de geoservicios publicados
+## Anexo 2. Lista de geoservicios publicados
 La siguiente es la lista de geoservicios publicados a la fecha:
 
 <table>
