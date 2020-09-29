@@ -126,7 +126,7 @@ $ ogr2ogr \
     gam_rutas_conectividad_bosque_corredores.geojson \
     RUTAS_CONECTIVIDAD_BOSQUE.shp
     
-# Rutas de conectividad para grupo funcional de bosque y bosque ribereño
+# Rutas de conectividad para grupo funcional de bosque y bosque ribereño ¡¡¡ESTE ARCHIVO ESTÁ GENERANDO UN ERROR AL CARGARSE EN AG ONLINE!!!
 $ ogr2ogr \
     -f "GeoJSON" \
     -progress \
