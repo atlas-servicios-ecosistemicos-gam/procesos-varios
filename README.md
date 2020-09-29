@@ -167,6 +167,117 @@ $ ogr2ogr \
     RUTAS_CONECTIVIDAD_OTRAS.shp
 ```
 
+##### GAM
+```shell
+$ cd ../GAM
+```
+
+Parches esenciales e importantes en GAM
+```shell
+# Parches esenciales e importantes para grupo funcional de bosque
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_parches_esenciales_importantes_bosque_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_parches_esenciales_importantes_bosque_gam.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp
+    
+# Parches esenciales e importantes para grupo funcional de bosque y bosque ribereño
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_parches_esenciales_importantes_bosque_bripario_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_parches_esenciales_importantes_bosque_bripario_gam.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_BRIPARIO.shp
+    
+# Parches esenciales e importantes para grupo funcional bosque ribereño
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_parches_esenciales_importantes_bripario_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_parches_esenciales_importantes_bripario_gam.geojson \
+    PARCHES_ESENCIALES_IMPORTANTES_BRIPARIO.shp
+    
+# Parches esenciales e importantes para grupo funcional migratorias
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_parches_esenciales_importantes_migratorias_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_parches_esenciales_importantes_migratorias_gam.geojson \
+    PARCHES_IMPORTANTES_ESENCIALES_MIGRATORIAS.shp
+    
+# Parches esenciales e importantes para grupo funcional otras
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_parches_esenciales_importantes_otras_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_parches_esenciales_importantes_otras_gam.geojson \
+    PARCHES_ESENCIALES_PRIORITARIOS_OTROS.shp
+```
+
+Rutas de conectividad en GAM
+```shell
+# Rutas de conectividad para grupo funcional de bosque
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_bosque_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_bosque_gam.geojson \
+    RUTAS_CONECTIVIDAD_BOSQUE.shp
+    
+# Rutas de conectividad para grupo funcional de bosque y bosque ribereño ¡¡¡ESTE ARCHIVO ESTÁ GENERANDO UN ERROR AL CARGARSE EN AG ONLINE!!!
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_bosque_bripario_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_bosque_bripario_gam.geojson \
+    RUTAS_CONECTIVIDAD_BOSQUE_BRIPARIO.shp
+    
+# Rutas de conectividad para grupo funcional bosque ribereño
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_bripario_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_bripario_gam.geojson \
+    RUTAS_CONECTIVIDAD_BRIPARIO.shp
+    
+# Rutas de conectividad para grupo funcional migratorias
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_migratorias_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_migratorias_gam.geojson \
+    RUTAS_CONECTIVIDAD_MIGRATORIAS.shp
+    
+# Rutas de conectividad para grupo funcional otras
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_otras_gam \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_otras_gam.geojson \
+    RUTAS_CONECTIVIDAD_OTRAS.shp
+```
+
 Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
 ```shell
 # Actualización del repositorio
