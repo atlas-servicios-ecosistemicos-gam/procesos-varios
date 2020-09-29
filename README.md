@@ -114,6 +114,59 @@ $ ogr2ogr \
     PARCHES_ESENCIALES_IMPORTANTES_OTRAS.shp
 ```
 
+Rutas de conectividad en CBI María Aguilar y Río Torres
+```shell
+# Rutas de conectividad para grupo funcional de bosque
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_bosque_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_bosque_corredores.geojson \
+    RUTAS_CONECTIVIDAD_BOSQUE.shp
+    
+# Rutas de conectividad para grupo funcional de bosque y bosque ribereño
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_bosque_bripario_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_bosque_bripario_corredores.geojson \
+    RUTAS_CONECTIVIDAD_BOSQUE_BRIPARIO.shp
+    
+# Rutas de conectividad para grupo funcional bosque ribereño
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_bripario_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_bripario_corredores.geojson \
+    RUTAS_CONECTIVDAD_BRIPARIO.shp
+    
+# Rutas de conectividad para grupo funcional migratorias
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_migratorias_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_migratorias_corredores.geojson \
+    RUTAS_CONECTIVIDAD_MIGRATORIAS.shp
+    
+# Rutas de conectividad para grupo funcional otras
+$ ogr2ogr \
+    -f "GeoJSON" \
+    -progress \
+    -nln gam_rutas_conectividad_otras_corredores \
+    -s_srs EPSG:5367 -t_srs EPSG:4326 \
+    -makevalid \
+    gam_rutas_conectividad_otras_corredores.geojson \
+    RUTAS_CONECTIVIDAD_OTRAS.shp
+```
+
 Una vez finalizadas las transformaciones, este repositorio Git debe actualizarse y el ambiente Conda debe desactivarse:
 ```shell
 # Actualización del repositorio
