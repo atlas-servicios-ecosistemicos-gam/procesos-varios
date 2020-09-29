@@ -468,6 +468,22 @@ La siguiente es la lista de geoservicios publicados a la fecha:
       <td>
         RUTAS_CONECTIVIDAD_MIGRATORIAS.shp
       </td>      
-    </tr>             
+    </tr>
+    <tr>
+      <td>
+        15
+      </td>
+      <td>
+        Rutas de conectividad para grupo funcional de otras en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_rutas_conectividad_otras_corredores/FeatureServer
+      </td>
+      <td>
+      </td>
+      <td>
+        RUTAS_CONECTIVIDAD_OTRAS.shp
+      </td>      
+    </tr>            
   </tbody>
 </table>
