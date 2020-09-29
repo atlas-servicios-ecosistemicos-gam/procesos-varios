@@ -220,6 +220,7 @@ $ conda deactivate
 ## Anexo 2. Lista de geoservicios publicados
 La siguiente es la lista de geoservicios publicados a la fecha:
 
+**Parches esenciales e importantes en CBI María Aguilar y Río Torres**
 <table>
   <thead>
     <tr><th>Id</th><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Visualización</th><th>Archivo original</th></tr>
@@ -395,5 +396,31 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         PARCHES_ESENCIALES_IMPORTANTES_OTRAS.shp
       </td>          
     </tr>               
+  </tbody>
+</table>
+
+**Rutas de conectividad en CBI María Aguilar y Río Torres**
+<table>
+  <thead>
+    <tr><th>Id</th><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Visualización</th><th>Archivo original</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        11
+      </td>
+      <td>
+        Rutas de conectividad para grupo funcional de bosque en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_rutas_conectividad_bosque_corredores/FeatureServer
+      </td>
+      <td>
+      </td>
+      <td>
+        RUTAS_CONECTIVIDAD_BOSQUE.shp
+      </td>      
+    </tr>
+       
   </tbody>
 </table>
