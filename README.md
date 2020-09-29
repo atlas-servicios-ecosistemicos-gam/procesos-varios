@@ -598,3 +598,46 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>            
   </tbody>
 </table>
+
+**Parches esenciales e importantes en la GAM**
+<table>
+  <thead>
+    <tr><th>Id</th><th>Nombre de la capa</th><th>ArcGIS REST Feature Service</th><th>Visualización</th><th>Archivo original</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        16
+      </td>
+      <td>
+        Parches esenciales para grupo funcional de bosque en la GAM
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bosque_gam/FeatureServer/0
+      </td>
+      <td>
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-gam/
+      </td>
+      <td>
+        PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.SHP
+      </td>      
+    </tr>
+    <tr>
+      <td>
+        17
+      </td>      
+      <td>
+        Parches importantes para grupo funcional de bosque en la GAM
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_bosque_gam/FeatureServer/0
+      </td>
+      <td>
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-gam/
+      </td>
+      <td>
+        PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.shp
+      </td>      
+    </tr>            
+  </tbody>
+</table>
