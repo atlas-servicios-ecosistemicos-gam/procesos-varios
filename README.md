@@ -240,7 +240,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
       </td>
       <td>
-        PARCHES_ESENCIALES_IMPORTANTES_BOSQUE_CORREDORES.SHP
+        PARCHES_ESENCIALES_IMPORTANTES_BOSQUE.SHP
       </td>      
     </tr>
     <tr>
@@ -421,6 +421,22 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         RUTAS_CONECTIVIDAD_BOSQUE.shp
       </td>      
     </tr>
+    <tr>
+      <td>
+        12
+      </td>
+      <td>
+        Rutas de conectividad para grupo funcional de bosque y bosque ribereño en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_rutas_conectividad_bosque_bripario_corredores/FeatureServer
+      </td>
+      <td>
+      </td>
+      <td>
+        RUTAS_CONECTIVIDAD_BOSQUE_BRIPARIO.shp
+      </td>      
+    </tr>      
        
   </tbody>
 </table>
