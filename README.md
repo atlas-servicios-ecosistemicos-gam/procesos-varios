@@ -429,7 +429,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         Rutas de conectividad para grupo funcional de bosque y bosque ribereño en CBI María Aguilar y Río Torres
       </td>
       <td>
-        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_rutas_conectividad_bosque_bripario_corredores/FeatureServer
+        ERROR
       </td>
       <td>
       </td>
@@ -437,6 +437,21 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         RUTAS_CONECTIVIDAD_BOSQUE_BRIPARIO.shp
       </td>      
     </tr>      
-       
+    <tr>
+      <td>
+        13
+      </td>
+      <td>
+        Rutas de conectividad para grupo funcional de bosque ribereño en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_rutas_conectividad_bripario_corredores/FeatureServer
+      </td>
+      <td>
+      </td>
+      <td>
+        RUTAS_CONECTIVIDAD_BRIPARIO.shp
+      </td>      
+    </tr>       
   </tbody>
 </table>
