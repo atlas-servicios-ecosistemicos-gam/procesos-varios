@@ -450,8 +450,24 @@ La siguiente es la lista de geoservicios publicados a la fecha:
       <td>
       </td>
       <td>
-        RUTAS_CONECTIVIDAD_BRIPARIO.shp
+        RUTAS_CONECTIVDAD_BRIPARIO.shp
       </td>      
     </tr>       
+    <tr>
+      <td>
+        14
+      </td>
+      <td>
+        Rutas de conectividad para grupo funcional de migratorias en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_rutas_conectividad_migratorias_corredores/FeatureServer
+      </td>
+      <td>
+      </td>
+      <td>
+        RUTAS_CONECTIVIDAD_MIGRATORIAS.shp
+      </td>      
+    </tr>             
   </tbody>
 </table>
