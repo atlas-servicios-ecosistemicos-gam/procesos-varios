@@ -174,7 +174,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
   <tbody>
     <tr>
       <td>
-        1
+        01
       </td>
       <td>
         Parches esenciales para grupo funcional de bosque en CBI María Aguilar y Río Torres
@@ -191,7 +191,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>
     <tr>
       <td>
-        2
+        02
       </td>      
       <td>
         Parches importantes para grupo funcional de bosque en CBI María Aguilar y Río Torres
@@ -208,7 +208,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>
     <tr>
       <td>
-        3
+        03
       </td>      
       <td>
         Parches esenciales para grupo funcional de bosque y bosque ribereño en CBI María Aguilar y Río Torres
@@ -225,7 +225,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>    
     <tr>
       <td>
-        4
+        04
       </td>      
       <td>
         Parches importantes para grupo funcional de bosque y bosque ribereño en CBI María Aguilar y Río Torres
@@ -242,7 +242,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>
     <tr>
       <td>
-        5
+        05
       </td>      
       <td>
         Parches esenciales para grupo funcional de bosque ribereño en CBI María Aguilar y Río Torres
@@ -259,7 +259,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>    
     <tr>
       <td>
-        6
+        06
       </td>      
       <td>
         Parches importantes para grupo funcional de bosque ribereño en CBI María Aguilar y Río Torres
@@ -276,7 +276,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>         
     <tr>
       <td>
-        7
+        07
       </td>      
       <td>
         Parches esenciales para grupo funcional de migratorias en CBI María Aguilar y Río Torres
@@ -293,7 +293,7 @@ La siguiente es la lista de geoservicios publicados a la fecha:
     </tr>    
     <tr>
       <td>
-        8
+        08
       </td>      
       <td>
         Parches importantes para grupo funcional de migratorias en CBI María Aguilar y Río Torres
@@ -308,5 +308,39 @@ La siguiente es la lista de geoservicios publicados a la fecha:
         PARCHES_ESENCIALES_IMPORTANTES_MIGRATORIAS.shp
       </td>          
     </tr>            
+    <tr>
+      <td>
+        09
+      </td>      
+      <td>
+        Parches esenciales para grupo funcional de otras en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_otras_corredores/FeatureServer/0
+      </td>
+      <td>
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
+      </td>
+      <td>
+        PARCHES_ESENCIALES_IMPORTANTES_OTRAS.shp
+      </td>          
+    </tr>    
+    <tr>
+      <td>
+        10
+      </td>      
+      <td>
+        Parches importantes para grupo funcional de otras en CBI María Aguilar y Río Torres
+      </td>
+      <td>
+        https://services9.arcgis.com/RrvMEynxDB8hycVO/arcgis/rest/services/gam_parches_esenciales_importantes_otras_corredores/FeatureServer/0
+      </td>
+      <td>
+        https://atlas-servicios-ecosistemicos-gam.github.io/parches-esenciales-importantes-corredores/
+      </td>
+      <td>
+        PARCHES_ESENCIALES_IMPORTANTES_OTRAS.shp
+      </td>          
+    </tr>               
   </tbody>
 </table>
